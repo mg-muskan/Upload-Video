@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed';
+}
+
+/* #video-upload-page {
+    min-height: 100vh;
+    background-color: #dfe6e9;
+} */
+
+.upload-video-btn {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: end;
+}
+
+.upload-video-btn > button {
+    color: #fff;
+    border: 1px solid #41464b;
+    background-color: #3742fa;
+    transition: all .5s ease-in-out;
+}
+
+.upload-video-btn > button:hover {
+    color: #fff;
+    background-color: #ffa502;
+}
+
+.video-playlist-thead > tr > th,
+.video-playlist-td-video-content > label {
+    min-width: 50px;
+    white-space: nowrap;
+}
+
+.video-playlist-table {
+    padding: 5px;
+    overflow: auto;
+    margin-top: 10px;
+    border: 1px solid #41464b;
+}
+
+.upload-video-sno {
+    max-width: 100px;
+}
+
+.video-playlist-uploaded {
+    margin-top: 20px;
+}
+
+.video-playlist-select {
+    padding: 10px;
+}
+
+.video-playlist > .input-group > :not(:first-child)
+:not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: 1px;
+}
+
+.video-playlist-td-video {
+    display: flex;
+}
+
+.video-playlist-td-video > img {
+    width: 104px;
+    height: 58.5px;
+}
+
+.video-playlist-td-video-content {
+    padding: 5px;
+}
+
+.video-playlist-td-video-content > p {
+    color: #41464b;
+}
+
+.upload-video-heading {
+    width: 100%;
+    display: flex;
+    padding: 13px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.upload-video-heading > h3 {
+    margin-bottom: 0;
+}
+
+.upload-video-btn-box {
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.upload-video-close {
+    font-size: 1.4rem;
+}
+
+.upload-video-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-drop-video {
+    --url: url('');
+    --border: black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: .1rem dashed var(--border);
+    justify-content: space-evenly;
+    background: var(--url) center / contain no-repeat;
+}
+
+.upload-drop-video.invalid {
+    color: crimson;
+    --border: crimson;
+}
+
+.upload-drop-video.dragover .arrow-up-upload {
+    height: 1rem;
+    margin-bottom: 0 ;
+}
+
+.upload-drop-video.hide > * {
+    display: none;
+}
+
+.upload-video-drop-icon {
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #222;
+}
+
+.upload-video-drop-icon::before {
+    position: relative;
+    content: '';
+    width: .2rem;
+    height: 40%;
+    background: #ddd5;
+    border-radius: .2rem;
+    box-shadow: -1rem -2rem #ddd5,
+                -1.8rem 2rem #ddd5,
+                -2.5rem -1rem #ddd5,
+                -3.6rem 1rem #ddd5,
+                1rem -4rem #ddd5,
+                1.8rem 4rem #ddd5,
+                2.5rem -2rem #ddd5,
+                3.6rem 2rem #ddd5;
+    transform: translateY(-276%);
+}
+
+@keyframes slide-down {
+    100% {
+        transform: translateY(276%);
+    }
+}
+
+.upload-drop-video.valid .upload-video-drop-icon::before {
+    animation: slide-down .5s linear infinite;
+}
+
+.arrow-up-upload {
+    width: 2.5rem;
+    height: 2.8rem;
+    margin-top: -45%;
+    background: #ddd;
+    margin-bottom: .5rem;
+    clip-path: polygon(30% 100%, 30% 50%, 
+                0% 50%, 50% 0%, 100% 50%, 70% 50%, 70% 100%);
+
+    transition: .5s ease-in-out;
+}
+
+.bar-upload {
+    width: 3rem;
+    height: .5rem;
+    background: #ddd;
+}
+
+.upload-video-file {
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    background-color: #3742fa;
+}
+
+.upload-video-form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-video-form {
+    width: 90%;
+}
+
+.upload-video-input {
+    margin-bottom: 15px;
+}
+
+.upload-video-submit {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-video-submit-btn {
+    color: #41464b;
+    transition: all .5s ease-in-out;
+    border: 1px solid #41464b;
+}
+
+.upload-video-submit-btn:hover {
+    color: #fff;
+    background-color: #3742fa;
+}

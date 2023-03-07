@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed';
+}
+
+.upload-video-form-page {
+    padding: 50px 0;
+}
+
+.upload-video-box {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.upload-drop-video {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    border: .1rem dashed #000;
+    justify-content: space-evenly;
+}
+
+.upload-drop-video > img {
+    width: inherit;
+    height: inherit;
+}
+
+.upload-video-form-box {
+    display: flex;
+    margin: 0 30px;
+    padding: 20px 0;
+    background: #fff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.upload-video-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload-video-progress > .progress {
+    height: 4px;
+    width: 100%;
+    margin-right: 30px;
+    border-radius: 4px;
+    background-color: #cfcccc;
+}
+
+.upload-video-progress > .progress > .bar {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #6990F2;
+    transition: all .4s ease-in-out;
+}
+
+.upload-progress-and-cancel {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upload-progress-and-cancel > a {
+    text-decoration: none;
+}
+
+.upload-progress-and-cancel > span {
+    align-self: center;
+}
+
+.upload-video-cancel {
+    color: #41464b;
+    padding: 5px;
+    font-size: 28px;
+}
+
+.upload-video-form {
+    width: 90%;
+}
+
+.upload-video-input {
+    margin-bottom: 15px;
+}
+
+.upload-video-submit {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-video-submit-btn {
+    color: #41464b;
+    transition: all .5s ease-in-out;
+    border: 1px solid #41464b;
+}
+
+.upload-video-submit-btn:hover {
+    color: #fff;
+    background-color: #3742fa;
+}
